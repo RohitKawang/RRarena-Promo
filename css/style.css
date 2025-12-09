@@ -65,11 +65,25 @@ body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial; margin:0; background:lin
 
 .qr-section .qr-area{display:flex;gap:20px;align-items:center;margin-top:18px}
 .qr-card{background:var(--glass);padding:18px;border-radius:12px;display:flex;flex-direction:column;align-items:center;min-width:160px}
-.qr-img{width:160px;height:160px}
+.qr-img{width:160px;height:160px;}
 .qr-caption{margin-top:10px;color:var(--muted)}
 .qr-info .muted{color:var(--muted);font-size:0.9rem}
 
-.site-footer{padding:18px 0;border-top:1px solid rgba(255,255,255,0.02);margin-top:40px}
+/* QR section alignment */
+.qr-section{text-align:center}
+.qr-section .qr-area{display:flex;gap:20px;align-items:center;justify-content:center;margin-top:18px;flex-direction:column}
+.qr-section h3{margin-bottom:12px}
+
+/* Powered By section */
+.powered-by-section{text-align:center}
+.powered-by-section h3{margin-bottom:12px}
+.powered-by-logos{display:flex;gap:40px;justify-content:center;align-items:center;margin-top:24px}
+.logo-item{display:flex;flex-direction:column;align-items:center;gap:8px}
+.tech-logo{width:80px;height:80px;transition:transform 280ms ease}
+.logo-item:hover .tech-logo{transform:scale(1.08)}
+.logo-item p{margin:0;color:var(--muted);font-size:0.95rem;font-weight:500}
+
+.site-footer{padding:20px 0;border-top:1px solid rgba(246, 232, 232, 0.02);margin-top:-30px}
 .footer-inner{display:flex;justify-content:space-between;align-items:center}
 .muted{color:var(--muted)}
 
@@ -80,6 +94,8 @@ body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial; margin:0; background:lin
   .footer-inner{flex-direction:column;gap:8px;text-align:center}
   .hero-copy h2{font-size:1.8rem}
   .device-mock{height:260px}
+  .powered-by-logos{gap:20px}
+  .tech-logo{width:60px;height:60px}
 }
 
 @media (min-width:1400px){
